@@ -7,6 +7,7 @@ public class Menu {
 
     public void showMenu() {
         Shop shop = new Shop();
+        shop.existingUsers();
         Scanner scanner = new Scanner(System.in);
         String userInput = "";
         do {

@@ -51,7 +51,7 @@ public class Shop {
 
     public void viewAllUsers() {
         //System.out.println("viewAllUsers");
-        //ArrayList<Users> allUsers = getAllUsers();
+        ArrayList<Users> allUsers = getAllUsers();
         System.out.println("\nAll registered users:");
         System.out.println("Name \t\t\tSurname \t\t\tAvailable balance");
         for (Users users : users) {
@@ -88,19 +88,20 @@ public class Shop {
 
 
     public void buyProduct() {
-        System.out.println("buyProduct");
+        System.out.println("Add necessary information.");
         Scanner scanner = new Scanner(System.in);
         System.out.print("User:");
         String buyer = scanner.nextLine();
         System.out.print("Product:");
         String buyProduct=scanner.nextLine();
-        System.out.print("Product:");
+        System.out.print("Amount:");
         int buyAmount=scanner.nextInt();
+        System.out.println(buyer+" wants to buy "+buyAmount+" "+buyProduct);
 
 
 
     }
-    /*public void existingUsers () {
+    public void existingUsers () {
         Users defaultUser = new Users();
         defaultUser.name="Admin";
         defaultUser.surname="Admin";
@@ -108,7 +109,7 @@ public class Shop {
         //users.add(defaultUser);
         this.addUser(defaultUser);
         addUser(defaultUser);
-        }*/
+        }
 
 
 
